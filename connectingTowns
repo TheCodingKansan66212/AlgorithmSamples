@@ -1,0 +1,8 @@
+for _ in range(int(input())):
+    UselessInformation = int(input())
+    routes = list(map(int, input().strip().split()))
+    product = 1
+    for item in routes:
+        product*= item
+    product %= 1234567
+    print(product)
